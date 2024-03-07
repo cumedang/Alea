@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="siginup.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap" rel="stylesheet">
+    <link rel="icon" type="img/x-icon" href="해커톤9팀.png">
+    <title>회원가입</title>
+</head>
+
+<body>
+    <form action="siginup_procss.php" method="POST" class="Form">
+        <div class="loginwrap">
+            <h1>SIGN UP</h1>
+            <div class="wrap">
+                <div class="Mailclass">
+                    <input type="email" name="makeemail" placeholder="email" class="Mail"id="mail">
+                </div>
+                <div class="IDclass">
+                    <input type="text" name="makeid" placeholder="ID to create" class="ID" id="ID">
+                </div>
+                <div class="PWDclass">
+                    <input type="password" name="makepassword" placeholder="password to create" class="PWD" id="PW">
+                </div>
+            </div>
+            <div class="button">
+                <button class="maker" id="maker" onclick="pushAll();"><a>SEND</a></button>
+            </div>
+        </div>
+        <script>
+            const pushAll= function(){
+                let userNewId = document.querySelector("#ID");
+                let userNewEmail = document.querySelector("#mail");
+                let userNewPw = document.querySelector("#PW");
+                
+                if(userNewId.value==""){
+                    alert("ID 를 입력해주세요.");
+                    document.getElementsByName("makeid").focus();
+                    
+                }
+                if(userNewEmail.value==""){
+                    alert("email을 입력해주세요.");
+                    document.getElementsByName("makeemail").focus();
+                
+                }
+                if(userNewPw.value == ""){
+                    alert("비밀번호를 입력해주세요.");
+                    document.getElementsByName("makepassword").focus();
+                
+                }
+            }
+        </script>
+    </form>
+</body>
+
+</html>

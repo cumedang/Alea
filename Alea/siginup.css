@@ -1,0 +1,117 @@
+* {
+    font-family: 'Nanum Gothic', sans-serif;
+}
+
+body {
+    background-color: #000;
+    margin: 0;
+    padding: 0;
+}
+
+.Form {
+    position: absolute;
+    width: 400px;
+    height: 400px;
+    padding: 30px, 20px;
+    background-color: #000;
+    text-align: center;
+    top: 40%;
+    left: 50%;
+    margin-top: 80px;
+    transform: translate(-50%, -50%);
+    border: 0.2rem solid #fff; 
+    border-radius: 2rem; 
+    padding: 0.4em; 
+    box-shadow: 0 0 .2rem #fff, 0 0 .2rem #fff, 
+    0 0 2rem #008fff, 0 0 0.8rem #008fff, 0 0 2.8rem #008fff, inset 0 0 1.3rem #008fff;
+}
+
+.Form h1{
+    animation: pulsate-blue 1.5s infinite alternate;
+    color: #fff;
+}
+
+.ID {
+    height: 35px;
+    width: 300px;
+    outline: none;
+    font-weight: bold;
+    font-size: 16px;
+    color: #fff;
+    background: none;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: 2px solid #fff;
+    padding: 3px;
+    margin-top: 20px;
+}
+
+.Mail {
+    height: 35px;
+    width: 300px;
+    outline: none;
+    font-weight: bold;
+    font-size: 16px;
+    color: #fff;
+    background: none;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: 2px solid #fff;
+    padding: 3px;
+    margin-top: 20px;
+}
+
+.PWD {
+    height: 35px;
+    width: 300px;
+    outline: none;
+    font-weight: bold;
+    font-size: 16px;
+    color: #fff;
+    background: none;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: 2px solid #fff;
+    padding: 3px;
+    margin-top: 20px;
+}
+
+.maker {
+    width: 200px;
+    height: 40px;
+    margin-top: 50px;
+    color: #fff;
+    background-color: transparent;
+    border: 0.15rem solid #fff; 
+    border-radius: 2rem; 
+    padding: 0.4em;
+    font-size: 16px;
+    font-weight: bold;
+    transition: all .2s;
+}
+
+.maker>a{
+    transition: all .2s;
+}
+
+.maker:hover {
+    box-shadow: 0 0 .2rem #fff, 0 0 .2rem #fff, 
+    0 0 2rem #008fff, 0 0 0.8rem #008fff, 0 0 2.8rem #008fff, inset 0 0 1.3rem #008fff;
+    animation: pulsate-blue 1.5s infinite alternate;
+    color: #fff;
+}
+
+@keyframes pulsate-blue{
+    100% { 
+        text-shadow: 0 0 4px #fff, 0 0 11px #fff, 0 0 19px #fff, 
+        0 0 40px #008fff, 0 0 80px #008fff, 0 0 90px #008fff, 0 0 100px #008fff,0 0 150px #008fff; 
+    } 
+
+    0% {
+        text-shadow: 0 0 4px #fff, 0 0 10px #fff, 0 0 18px #fff, 
+        0 0 38px #008fff, 0 0 73px #008fff, 0 0 80px #008fff, 0 0 94px #008fff, 0 0 140px #008fff; 
+    }
+}
